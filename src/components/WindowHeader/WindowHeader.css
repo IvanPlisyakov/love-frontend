@@ -1,0 +1,31 @@
+.window-header {
+  padding: 0 10px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  border-bottom: 1px solid grey;
+  column-gap: 10px;
+}
+
+.window-header__button {
+  border: none;
+  outline: none;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+  justify-self: start;
+  cursor: pointer;
+}
+
+.window-header__button:hover {
+  opacity: 0.9;
+}
+
+.window-header__button-image {
+  display: block;
+  width: 25px;
+  height: 25px;
+}

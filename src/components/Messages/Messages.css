@@ -1,0 +1,132 @@
+.messages {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content min-content 1fr min-content;
+}
+
+.messages__couples {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.messages__title {
+  margin: 5px 0 20px 15px;
+}
+
+.messages__couples-column {
+  width: 100%;
+  display: flex;
+  overflow-y: auto;
+  padding-bottom: 10px;
+}
+
+.messages__couple {
+  height: 112px;
+  width: 80px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.messages__couple:hover {
+  opacity: 0.9;
+}
+
+.messages__couple-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 49%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.messages__couple-name {
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.messages__chats {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.messages__chats-column {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.messages__chat {
+  padding: 0 15px;
+  height: 90px;
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  column-gap: 15px;
+  row-gap: 8px;
+  grid-template-rows: 1fr 1fr;
+  text-decoration: none;
+  color: black;
+}
+
+.messages__chat_size_small {
+  height: 50px;
+  max-width: 250px;
+  grid-template-columns: 40px 1fr;
+  row-gap: 0px;
+  grid-template-rows: 1fr;
+  justify-self: center;
+}
+
+.messages__chat-image {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 90%;
+  height: 90%;
+  border-radius: 49%;
+  object-fit: cover;
+  object-position: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.messages__chat-image_size_small {
+  width: 40px;
+  height: 40px;
+}
+
+.messages__chat-name {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  align-self: end;
+  justify-self: start;
+}
+
+.messages__chat-name_size_small {
+  align-self: center;
+}
+
+.messages__chat-message {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  align-self: start;
+  justify-self: start;
+}
+
+.messages__chat-message-your {
+  font-weight: 600;
+}
